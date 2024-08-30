@@ -1,0 +1,56 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+};
+
+body {
+    background-color: white;
+    font-family: 'Raleway', sans-serif;
+    font-size: 14px;
+    line-height: 26px;
+}
+
+.container {
+    display: grid;
+    height: 500px;
+    grid-template-columns: 1fr, 2fr, 2fr;
+    grid-template-rows: 500px;
+    column-gap: 10px
+}
+
+.nav {
+    grid-column: 1;
+    grid-row: 1;
+}
+
+.main-photo {
+    grid-column: 2 / 4;
+    grid-row: 1;
+}
+
+a:hover {
+    color: lime;
+}
+
+.main-photo {
+    background-image: url('');
+    background-size: cover;
+    background-position: center;
+    height: 300px;
+}
+
+nav ul {
+    margin: 0;
+    padding: 0;
+}
+
+nav li {
+    font-weight: 100;
+    letter-spacing: 2px;
+    padding: 20px;
+}
+
+footer {
+    width: 100%;
+}
